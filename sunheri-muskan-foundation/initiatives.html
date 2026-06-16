@@ -9,16 +9,16 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   
   <header class="header">
     <div class="container nav-container">
       <div class="logo-container">
-        <div>
-          <a href="index.html" class="logo-text">Sunheri Muskan</a>
-          <span class="logo-sub">Foundation</span>
-        </div>
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="Sunheri Muskan Foundation Logo" style="max-height: 50px;">
+        </a>
       </div>
       <nav class="nav-menu">
         <a href="index.html" class="nav-link">Home</a>
@@ -32,7 +32,7 @@
     </div>
   </header>
 
-  <section class="hero" style="margin-top: 80px; padding: 100px 0; background-color: var(--color-primary-dark); color: white; text-align: center;">
+  <section class="hero" data-aos="zoom-in" style="margin-top: 80px; padding: 100px 0; background-color: var(--color-primary-dark); color: white; text-align: center;">
     <div class="container animate-up">
       <h1 style="color: var(--color-secondary); font-size: 3rem;">Our Initiatives</h1>
       <p style="font-size: 1.1rem; max-width: 600px; margin: 20px auto 0;">Driving change through structured, impactful programs.</p>
@@ -46,7 +46,7 @@
           <img src="assets/images/education_initiative_1781538830903.png" alt="Education" style="border-radius: var(--radius-md);">
         </div>
         <div style="flex: 1; min-width: 300px;">
-          <h2 class="section-title">Education Programs</h2>
+          <h2 class="section-title" data-aos="fade-down">Education Programs</h2>
           <p>We believe education is the most powerful tool for social transformation. Our education initiatives focus on providing free tutoring, school supplies, and digital literacy to children from low-income families.</p>
           <ul style="margin-top: 20px; list-style-type: disc; margin-left: 20px;">
             <li>After-school learning centers</li>
@@ -62,7 +62,7 @@
     <div class="container">
       <div style="display: flex; flex-wrap: wrap-reverse; gap: 40px; align-items: center; margin-bottom: 80px;">
         <div style="flex: 1; min-width: 300px;">
-          <h2 class="section-title">Skill Empowerment</h2>
+          <h2 class="section-title" data-aos="fade-down">Skill Empowerment</h2>
           <p>We run vocational training programs that equip young adults and women with practical skills, enabling them to secure employment or start their own small businesses.</p>
           <ul style="margin-top: 20px; list-style-type: disc; margin-left: 20px;">
             <li>Computer operation and basic coding</li>
@@ -84,7 +84,7 @@
           <img src="assets/images/social_welfare_1781538862985.png" alt="Social Welfare" style="border-radius: var(--radius-md);">
         </div>
         <div style="flex: 1; min-width: 300px;">
-          <h2 class="section-title">Social Welfare & Health</h2>
+          <h2 class="section-title" data-aos="fade-down">Social Welfare & Health</h2>
           <p>Our commitment to overall well-being involves organizing regular health camps, distributing essential food supplies during crises, and providing hygiene awareness sessions.</p>
           <ul style="margin-top: 20px; list-style-type: disc; margin-left: 20px;">
             <li>Free medical checkups and eye camps</li>
@@ -106,5 +106,7 @@
 
   <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({duration: 800, once: true, offset: 100});</script>
 </body>
 </html>

@@ -18,6 +18,7 @@
   
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   
@@ -25,10 +26,9 @@
   <header class="header">
     <div class="container nav-container">
       <div class="logo-container">
-        <div>
-          <a href="index.html" class="logo-text">Sunheri Muskan</a>
-          <span class="logo-sub">Foundation</span>
-        </div>
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="Sunheri Muskan Foundation Logo" style="max-height: 50px;">
+        </a>
       </div>
       
       <nav class="nav-menu">
@@ -49,7 +49,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero" style="margin-top: 80px; position: relative; background: linear-gradient(rgba(43, 43, 43, 0.7), rgba(43, 43, 43, 0.7)), url('assets/images/hero_banner_1781538815611.png') center/cover; padding: 120px 0; color: white; text-align: center;">
+  <section class="hero" data-aos="zoom-in" style="margin-top: 80px; position: relative; background: linear-gradient(rgba(43, 43, 43, 0.7), rgba(43, 43, 43, 0.7)), url('assets/images/hero_banner_1781538815611.png') center/cover; padding: 120px 0; color: white; text-align: center;">
     <div class="container animate-up">
       <h1 style="color: var(--color-secondary); font-size: 3.5rem; margin-bottom: 20px;">Bring Back the Smiles</h1>
       <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 30px; line-height: 1.8;">
@@ -66,13 +66,13 @@
   <section class="section section-light">
     <div class="container">
       <div class="section-header text-center">
-        <h2 class="section-title">Our Initiatives</h2>
+        <h2 class="section-title" data-aos="fade-down">Our Initiatives</h2>
         <p class="section-subtitle">We focus on holistic development to create a lasting impact on society.</p>
       </div>
       
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
         
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img src="assets/images/education_initiative_1781538830903.png" alt="Education" class="card-img">
           <div class="card-content">
             <h3 class="card-title">Education</h3>
@@ -81,7 +81,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img src="assets/images/skill_empowerment_1781538847310.png" alt="Skill Empowerment" class="card-img">
           <div class="card-content">
             <h3 class="card-title">Skill Empowerment</h3>
@@ -90,7 +90,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img src="assets/images/social_welfare_1781538862985.png" alt="Social Welfare" class="card-img">
           <div class="card-content">
             <h3 class="card-title">Social Welfare</h3>
@@ -106,7 +106,7 @@
   <!-- Impact Statistics -->
   <section class="section section-dark">
     <div class="container text-center">
-      <h2 class="section-title">Our Impact So Far</h2>
+      <h2 class="section-title" data-aos="fade-down">Our Impact So Far</h2>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-top: 50px;">
         <div>
           <h3 style="font-size: 3rem; color: var(--color-secondary); margin-bottom: 10px;">5000+</h3>
@@ -131,7 +131,7 @@
   <!-- CTA Section -->
   <section class="section" style="background-color: var(--color-secondary-light); text-align: center;">
     <div class="container">
-      <h2 class="section-title" style="color: var(--color-primary-dark);">Join Us in Making a Difference</h2>
+      <h2 class="section-title" data-aos="fade-down" style="color: var(--color-primary-dark);">Join Us in Making a Difference</h2>
       <p class="section-subtitle" style="color: var(--color-primary-dark); margin-bottom: 30px;">Your support can change lives. Volunteer your time or make a donation today.</p>
       <a href="donate.html" class="btn btn-primary" style="margin-right: 15px;">Donate Now</a>
       <a href="contact.html" class="btn btn-outline" style="border-color: var(--color-primary-dark); color: var(--color-primary-dark);">Become a Volunteer</a>
@@ -180,5 +180,7 @@
 
   <!-- JS -->
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({duration: 800, once: true, offset: 100});</script>
 </body>
 </html>

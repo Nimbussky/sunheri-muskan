@@ -9,16 +9,16 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   
   <header class="header">
     <div class="container nav-container">
       <div class="logo-container">
-        <div>
-          <a href="index.html" class="logo-text">Sunheri Muskan</a>
-          <span class="logo-sub">Foundation</span>
-        </div>
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="Sunheri Muskan Foundation Logo" style="max-height: 50px;">
+        </a>
       </div>
       <nav class="nav-menu">
         <a href="index.html" class="nav-link">Home</a>
@@ -32,7 +32,7 @@
     </div>
   </header>
 
-  <section class="hero" style="margin-top: 80px; padding: 100px 0; background-color: var(--color-primary-dark); color: white; text-align: center;">
+  <section class="hero" data-aos="zoom-in" style="margin-top: 80px; padding: 100px 0; background-color: var(--color-primary-dark); color: white; text-align: center;">
     <div class="container animate-up">
       <h1 style="color: var(--color-secondary); font-size: 3rem;">Make a Donation</h1>
       <p style="font-size: 1.1rem; max-width: 600px; margin: 20px auto 0;">Your contribution helps us continue our mission and reach more people in need.</p>
@@ -43,7 +43,7 @@
     <div class="container">
       <div style="display: flex; flex-wrap: wrap; gap: 40px;">
         <div style="flex: 1; min-width: 300px; padding-right: 20px;">
-          <h2 class="section-title">Why Donate?</h2>
+          <h2 class="section-title" data-aos="fade-down">Why Donate?</h2>
           <p style="margin-bottom: 20px;">Every rupee you donate goes directly towards our active initiatives—whether it's providing school supplies to a child, funding a health camp, or empowering a youth with vocational skills.</p>
           <div style="background-color: var(--color-background); padding: 25px; border-left: 4px solid var(--color-primary); margin-bottom: 20px;">
             <h4 style="margin-bottom: 10px;">Transparency Statement</h4>
@@ -53,7 +53,7 @@
         </div>
         
         <div style="flex: 1; min-width: 300px;">
-          <div class="card" style="padding: 40px; box-shadow: var(--shadow-md);">
+          <div class="card" data-aos="fade-up" style="padding: 40px; box-shadow: var(--shadow-md);">
             <h3 style="margin-bottom: 25px; text-align: center; color: var(--color-primary-dark);">Bank Transfer Details</h3>
             
             <div style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
@@ -93,5 +93,7 @@
 
   <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({duration: 800, once: true, offset: 100});</script>
 </body>
 </html>
