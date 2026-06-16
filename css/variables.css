@@ -1,0 +1,33 @@
+:root {
+  /* Colors */
+  --color-primary: #8A6A18;
+  --color-primary-light: #A48332;
+  --color-primary-dark: #664A0B;
+  --color-secondary: #D4B36A;
+  --color-secondary-light: #E4C887;
+  --color-background: #F9F6EE;
+  --color-text: #2B2B2B;
+  --color-text-light: #5A5A5A;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  
+  /* Fonts */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* Box Shadows */
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 24px rgba(0,0,0,0.12);
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
