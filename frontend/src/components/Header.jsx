@@ -1,22 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <header className="header">
       <div className="container nav-container">
         <div className="logo-container">
-          <a href="index.html">
+          <Link to="/">
             <img src="assets/images/logo.png" alt="Sunheri Muskan Foundation Logo" style={{ maxHeight: '50px' }} />
-          </a>
+          </Link>
         </div>
         
         <nav className="nav-menu">
-          <a href="index.html" className="nav-link active">Home</a>
-          <a href="about.html" className="nav-link">About Us</a>
-          <a href="initiatives.html" className="nav-link">Our Initiatives</a>
-          <a href="gallery.html" className="nav-link">Impact Gallery</a>
-          <a href="contact.html" className="nav-link">Contact</a>
-          <a href="donate.html" className="btn btn-primary">Donate Now</a>
+          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/about" className="nav-link">About Us</Link>
+          <Link to="/initiatives" className="nav-link">Our Initiatives</Link>
+          <Link to="/gallery" className="nav-link">Impact Gallery</Link>
+          <Link to="/contact" className="nav-link">Contact</Link>
+          <Link to="/donate" className="btn btn-primary">Donate Now</Link>
         </nav>
         
         <button className="menu-toggle">
